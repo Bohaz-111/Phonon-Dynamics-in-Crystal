@@ -230,7 +230,7 @@ contains
             vdos(i) = vdos(i) + vacf(j) * cos(omega(i) * real(j, dp) * dt_in)
          end do
       end do
-      vdos = (vdos+temp) * (2.0_dp * dt_in) / (pi*temp)
+      vdos = (vdos) * (2.0_dp * dt_in) / (pi*temp)
 
    end subroutine compute_vdos
 
